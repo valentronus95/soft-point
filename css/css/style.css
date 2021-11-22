@@ -18,7 +18,7 @@
     background-color: $bgColor;
   }  */
 .bg-light {
-  background: white;
+  background-color: white !important;
 }
 
 .logo {
@@ -32,6 +32,18 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 37px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #021206;
+  opacity: 0.5;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FF4D4D;
 }
 
 .nav-item {
@@ -48,6 +60,11 @@
   opacity: 0.7;
   border: none;
   background: none;
+}
+.navbar-btn-left:hover {
+  color: #FF4D4D;
+  -webkit-transition: 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .navbar-btn-right {
@@ -75,6 +92,10 @@
 
 .part-pp {
   margin-top: 35.47px;
+}
+
+.pp-right {
+  margin-left: 30px;
 }
 
 .text-new {
@@ -136,6 +157,9 @@
   -webkit-filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
           filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
 }
+.search-txt:focus {
+  outline: none;
+}
 
 .search {
   position: absolute;
@@ -172,6 +196,231 @@
   position: absolute;
   left: 80%;
   top: -64%;
-  background-image: url(img/image-9.png);
-  background: url("img");
+}
+
+.partners {
+  max-width: 100%;
+  height: 163px;
+  background: rgba(142, 230, 201, 0.1);
+  margin-bottom: 110px;
+}
+
+.wrapp {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.part-logo {
+  height: 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-one {
+  width: 1216px;
+  height: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.setting {
+  width: 594px;
+  height: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.set-text {
+  width: 548px;
+  margin-left: 74px;
+}
+.set-text h1 {
+  width: 480px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 67px;
+  color: #021206;
+  margin-bottom: 20px;
+}
+.set-text p {
+  width: 479px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #021206;
+  opacity: 0.7;
+}
+.set-text button {
+  margin-top: 29px;
+  padding: 15px 40px;
+  width: 183px;
+  height: 59px;
+  background: #282323;
+  border-radius: 6px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-right: 25px;
+}
+.set-text a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-decoration: none;
+  color: #FF4D4D;
+}
+
+.set-one {
+  width: 282px;
+  height: 290px;
+  background: #FFFFFF;
+  border: 1px solid rgba(2, 18, 6, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 35px;
+  cursor: pointer;
+}
+.set-one:hover {
+  -webkit-box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+          box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+}
+
+.one-right {
+  margin-right: 30px;
+}
+
+.one-mr {
+  margin-top: 30px;
+}
+
+.set-h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 31px;
+  color: #021206;
+  opacity: 0.8;
+  margin-top: 25px;
+  margin-bottom: 9px;
+}
+
+.set-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #021206;
+  opacity: 0.7;
+}
+
+.one-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(141.58deg, #FF9A9A 3.63%, #F14C4C 91.45%);
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
+          box-shadow: 1px 5px 30px rgba(215, 21, 21, 0.5);
+  border-radius: 10px;
+}
+.one-vector img {
+  width: 34.08px;
+  height: 35px;
+}
+
+.two-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+  background-blend-mode: luminosity;
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+          box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+  border-radius: 10px;
+}
+.two-vector img {
+  width: 35px;
+  height: 35px;
+}
+
+.three-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(163.65deg, #FCD876 4.69%, #FABC13 88.66%);
+  background-blend-mode: luminosity;
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 1px 5px 30px rgba(238, 185, 42, 0.6);
+          box-shadow: 1px 5px 30px rgba(238, 185, 42, 0.6);
+  border-radius: 10px;
+}
+.three-vector img {
+  width: 29.8px;
+  height: 35px;
+}
+
+.four-vector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(143.75deg, #FE9AF4 0%, #EC4EDC 88.72%);
+  background-blend-mode: luminosity;
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
+          box-shadow: 1px 5px 30px rgba(230, 68, 214, 0.5);
+  border-radius: 10px;
+}
+.four-vector img {
+  width: 35px;
+  height: 35px;
 }
