@@ -1,15 +1,16 @@
 $bgColor: black;
+
 @mixin transition {
     transition: .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-@mixin h2 {
+@mixin title {
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 67px;
     color: #021206;
 }
-@mixin p {
+@mixin paragrahp {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -108,12 +109,7 @@ $bgColor: black;
         margin-bottom: 30px;
         width: 509px;
         height: 68px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 21px;
-        line-height: 160%;
-        color: #021206;
-        opacity: 0.7;
+        @include paragrahp;
     }
 }
 .text-info {
@@ -189,6 +185,7 @@ $bgColor: black;
     position: absolute;
     left: 80%;
     top: -64%;
+    background: url(../../img/image-9.png) no-repeat center center;
 }
 .partners {
     max-width: 100%;
@@ -222,21 +219,12 @@ $bgColor: black;
     margin-left: 74px;
     h1 {
         width: 480px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 45px;
-        line-height: 67px;
-        color: #021206;
+        @include title;
         margin-bottom: 20px;
     }
     p {
+        @include paragrahp;
         width: 479px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 160%;
-        color: #021206;
-        opacity: 0.7;
     }
     button {
         margin-top: 29px;
