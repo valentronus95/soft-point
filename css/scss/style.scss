@@ -401,4 +401,30 @@ a {
 }
 .content-img-two {
     margin-top: 10%;
+    margin-left: 5%;
+}
+.container-three {
+    height: 445px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 208px;
+}
+.content-img-three {
+    max-width: 591px;
+    img {
+    position: relative;
+    right: 30%;
+    }
+}
+.content-text-three {
+    width: 499px;
+    height: 345px;
+    margin-bottom: 130px;
+    h1 {
+        @include title;
+    }
+    p {
+        @include paragrahp;
+    }
 }
