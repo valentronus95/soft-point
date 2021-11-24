@@ -14,6 +14,10 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* .container-fluid:not(.logo) {   тест
     background-color: $bgColor;
   }  */
@@ -230,6 +234,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 110px;
 }
 
 .setting {
@@ -424,4 +429,67 @@
 .four-vector img {
   width: 35px;
   height: 35px;
+}
+
+.container-two {
+  height: 465px;
+}
+
+.content-box-two {
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-text-two {
+  width: 524px;
+  height: 398px;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+.content-text-two h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 67px;
+  color: #021206;
+  width: 524px;
+  margin-bottom: 20px;
+}
+.content-text-two p {
+  width: 448px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #021206;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.list-text-two {
+  width: 423px;
+}
+
+.mark {
+  padding: 0;
+  background: none !important;
+  list-style-position: inside;
+  list-style-image: url(../../img/Group-9.png);
+}
+.mark li {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #021206;
+  opacity: 0.7;
+}
+
+.content-img-two {
+  margin-top: 10%;
 }
