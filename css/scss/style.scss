@@ -1,23 +1,6 @@
-$bgColor: black;
+@import "mixins.scss";
+@import "variables.scss";
 
-@mixin transition {
-    transition: .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-}
-@mixin title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 67px;
-    color: #021206;
-}
-@mixin paragrahp {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 160%;
-    color: #021206;
-    opacity: 0.7;
-}
 .selector-for-some-widget {
     box-sizing: content-box;
 }
@@ -72,10 +55,7 @@ a {
     opacity: 0.7;
     border: none;
     background: none;
-    &:hover {
-        color: #FF4D4D;
-        @include transition();
-    }
+    @include transition;
 }
 .navbar-btn-right {
     background: #F44545;
@@ -243,6 +223,7 @@ a {
         font-size: 18px;
         color: #FFFFFF;
         margin-right: 25px;
+        @include transition;
     }
     a {
         font-style: normal;
@@ -427,4 +408,111 @@ a {
     p {
         @include paragrahp;
     }
+}
+.container-four {
+    width: 100%;
+    height: 527px;
+    margin-top: 120px;
+    margin-bottom: 110px;
+    background: rgba(142, 230, 201, 0.1);
+}
+.content-four {
+    display: flex;
+}
+.content-text-four {
+    width: 480px;
+    height: 345px;
+    margin: 91px 0;
+
+    h2 {
+        width: 380px;
+        @include title;
+    }
+    p {
+        width: 445px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        @include paragrahp;
+    }
+    button {
+        @include button;
+    }
+}
+.content-img-four {
+    position: relative;
+    bottom: 110px;
+}
+.container-five {
+    margin-bottom: 93.3px;
+}
+.content-box-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-title-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        @include title;
+    }
+    p {
+        width: 754px;
+        text-align: center;
+        @include paragrahp;
+    }
+}
+.check-box-five {
+    width: 268px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+    b {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 80%;
+        color: #4E5951;
+    }
+    i {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 80%;
+        color: #4E5951;
+    }
+}
+.form-switch .form-check-input {
+    width: 58.1px;
+    height: 28.98px;
+    border-radius: 6px;
+}
+.form-switch .form-check-input:checked {
+    background-image: url(../../img/Rectangle315.png);
+    background-size: 17px 16px;
+    background-position: 85% center;
+    border: none;
+}
+.form-check-input:checked {
+    background-color: #43DDAA;
+} 
+.save-up-five {
+    display: -webkit-box;
+    img {
+        position: relative;
+    }
+    p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 80%;
+        color: #021206;
+        opacity: 0.7;
+    }
+}
+.range-five {
+    width: 1146px;
 }

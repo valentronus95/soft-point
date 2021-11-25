@@ -1,0 +1,33 @@
+@mixin transition {
+    &:hover {
+    transition: .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #FF4D4D;
+    }
+}
+@mixin title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 67px;
+    color: #021206;
+}
+@mixin paragrahp {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #021206;
+    opacity: 0.7;
+}
+@mixin button {
+    width: 216px;
+    height: 62px;
+    background: #F44545;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+    border: none;
+}
