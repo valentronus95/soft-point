@@ -882,3 +882,8 @@ a {
 .footer-logo p {
   width: 244px;
 }
+
+/* &:hover {
+    transform: scale(1.0);
+transition: 1s;
+} */
