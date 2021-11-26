@@ -516,3 +516,77 @@ a {
 .range-five {
     width: 1146px;
 }
+.container-six {
+    display: flex;
+    justify-content: space-between;
+}
+.box-six {
+    width: 361px;
+    height: 604px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+    h2 {
+        @include title-block;
+    }
+    i {
+        @include number-block;
+    }
+    ul {
+        width: 100%; 
+        list-style-image: url(../../img/Group-9.png);
+        list-style-position: inside;
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 22px;
+            @include list;
+            b {
+                @include answer-off;
+            }
+        }
+    }
+    button {
+        @include block-btn;
+    } 
+}
+.footer {
+    height: 211px;
+    background: rgba(142, 230, 201, 0.1);
+    display: flex;
+    align-items: center;
+}
+.footer-block-all {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo, .footer-block-1, .footer-block-2, .footer-block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+        @include footer-title;
+    }
+    i, a {      
+        @include footer-text;
+    }
+}
+.footer-logo {
+    width: 244px;
+    img {
+        width: 147px;
+        height: 30px;
+    }
+    p {
+        width: 244px;
+
+    }
+}
+

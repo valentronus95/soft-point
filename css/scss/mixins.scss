@@ -31,3 +31,82 @@
     color: #FFFFFF;
     border: none;
 }
+@mixin title-block {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    color: #021206;
+    opacity: 0.5;
+}
+@mixin number-block {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 100%;
+    text-align: center;
+    color: #021206;
+}
+@mixin list {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #021206;
+    opacity: 0.7;
+}
+@mixin answer-off {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: right;
+    color: #021206;
+    opacity: 0.7;
+}
+@mixin block-btn {
+    width: 239px;
+    height: 60px;
+    background: #FFFFFF;
+    opacity: 0.2;
+    border: 2px solid #F44545;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    color: #F44545;
+    opacity: 0.9;
+    &:hover {
+        background: #F55454;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 170%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.9;
+    }
+}
+@mixin footer-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    color: #021206;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+@mixin footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #021206;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
