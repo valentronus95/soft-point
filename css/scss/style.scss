@@ -245,6 +245,7 @@ a {
     cursor: pointer;
     &:hover {
         box-shadow: 0px 15px 65px rgba(65, 77, 68, 0.15);
+        transition: .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     } 
 }
 .one-right {
@@ -503,6 +504,8 @@ a {
     display: -webkit-box;
     img {
         position: relative;
+        left: 12px;
+        bottom: 18px;
     }
     p {
         font-style: normal;
@@ -531,6 +534,11 @@ a {
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 120px;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
+        transition: .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
     h2 {
         @include title-block;
     }
@@ -576,6 +584,9 @@ a {
     }
     i, a {      
         @include footer-text;
+        &:hover {
+            @include transition;
+        }
     }
 }
 .footer-logo {
